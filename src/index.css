@@ -1,0 +1,342 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','Cocogoose Pro',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.compondent{
+  position: -webkit-sticky;
+
+  position: sticky;
+  top: 0;
+}
+
+.compondent01{
+  position: sticky;
+  top: 0px;
+}
+
+.fontRobot{
+  font-family: 'Roboto';
+}
+.Container02{
+  max-width: 1600px;
+  margin: auto;
+}
+
+
+.fontMontserrat{
+  font-family: "Montserrat" , "Medium" ;
+}
+.DIsplayFlexAndsiplayblockinMobile{
+  display: flex;
+}
+.Scrolloverflow{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 180px;
+  overflow-y: scroll;
+}
+/* 'Untitled-2.png */
+.backgroundImage{
+  background: url('Untitled-2.png') no-repeat fixed 100% 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.backgroundImage04{
+  background-color: tomato;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+button.rec-dot{
+  width: 5px;
+  height: 5px;
+  background-color:  #FA663C;
+  box-shadow: 0 0 1px 3px #FA663C;
+}
+.rec.rec-arrow{
+ display: none;
+}
+
+.rec.rec-arrow:hover{
+  background-color: red;
+}
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+  box-shadow: 0 0 1px 3px rgba(235,16,16,0.5);
+}
+.backgroundImage02{
+  background: url('Untitled-4.png') no-repeat fixed 100% 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+/* Test */
+/* Bannier */
+
+.BackgroundimageFullimage03{
+
+  width: 100%;
+  height: 100%;
+  background-image: url('Bannier06.png');
+  background-position: center;
+  background-size: cover;
+  
+}
+.BackgroundimageFullimage{
+  background: url('Test01.jpg') no-repeat fixed 100% 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.BackgroundimageFullimage06{
+  background: url('BackgroundImageopscilow.png') no-repeat fixed 100% 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.BackgroundimageFullimage008{
+  background: url('IamgeKoolfeed.jpg') no-repeat ;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.TestANimationclick{
+  -webkit-transition: 2s;
+  animation:animatio 1s;
+}
+.TestANimationclick01{
+  -webkit-transition: 2s;
+  animation:animatio01 1s;
+}
+/* TestANimationclick01 */
+
+.AnimaiionNavbarSticky{
+  -webkit-transition: 2s;
+  animation:animatio02 1s;
+}
+ @keyframes animatio02{
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+@keyframes animatio01{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 20);
+    transform: translate3d(0, -20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes animatio{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+.OppscityAnimation{
+  animation:AnimationOpcity 1s ;
+}
+@keyframes AnimationOpcity{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ScaleAnimation{
+  animation: ScalAnimation 2s;
+}
+/* transform: scale(1.5) */
+@keyframes ScalAnimation{
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+
+.HoverTest:hover{
+ 
+  -webkit-transition: 1s;
+  
+  background-color: #f1f1f1;
+  color: #FF33BB;
+  padding-left: 14px;
+  cursor: pointer;
+}
+.TestTesthover:hover .testhere{
+  background-color: red;
+}
+.MenuTogel{
+  color: #504D48;
+}
+.MenuTogel:hover{
+  color: white;
+  padding-left:30px;
+  -webkit-transition: 2s;
+
+  background-color: #FA663C;
+}
+.curser{
+  cursor: pointer;
+}
+.borderls{
+  
+  border-right: 2px solid rgb(204, 204, 204);
+  border-style: dotted;
+}
+.slick-prev {
+  content: "<";
+  color: red;
+
+
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-prev:before {
+  width: 80px;
+  height: 100px;
+content: '' !important;
+position: absolute;
+top: -20px;
+left: -60px;
+background-image: url('Arrow11.png');
+background-repeat: no-repeat;
+vertical-align: middle;
+background-size: 80px;
+opacity: 1 !important;
+
+
+}
+@media screen and (max-width: 600px) {
+  .slick-prev:before {
+   
+    display: none;
+  
+  } 
+}
+.slick-next:before{
+  /* background-color: blue !important; */
+  width: 80px;
+  height: 100px;
+  content: '' !important;
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  background-image: url('Arroww02.png');
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: 80px;
+  opacity: 1 !important;
+  }
+  .hoverTestanimationimage:hover{
+    -webkit-transition: 1s;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+
+  }
+  
+
+  /*Zoom Out*/
+ 
+.backgroundblackoverlay{
+  background: linear-gradient(
+    to bottom,
+    transparent, 
+    black
+  );
+ opacity: 80%;
+ width: 389px;
+ height: 71px;
+ border-bottom-right-radius: 10px ;
+ border-bottom-left-radius:10px;
+}
+
+.bordersolid{
+  border: solid 3px #E8E8E8;
+}
+/* ::placeholder */
+.Placholder::placeholder{
+  color: #75757D;
+  padding-left: 20px;
+}
+.border-top-bottm{
+  border-top: solid 1px #EDEDED;
+  border-bottom: solid 1px #EDEDED;
+}
+.border-Orange{
+  border: solid 1px #FC6439;
+}
+
+
+/* ANimation image on hover */
+.hoverimageAnimation{
+ overflow: hidden; 
+}
+.hoverimageAnimation img{
+  transition: 1s;
+  cursor: pointer;
+}
+.hoverimageAnimation img:hover{
+  transform: scale(1.1);
+}
+.row-gap{
+  row-gap: 2rem;
+}
+
